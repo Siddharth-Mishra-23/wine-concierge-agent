@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinetos de Sol Concierge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glitter-background"></div>
+        <header>
+            <h1><i class="fas fa-glass-cheers"></i> Vinetos de Sol Concierge <i class="fas fa-wine-bottle"></i></h1>
+            <p class="glitter-text">Your AI assistant for the ultimate Napa Valley experience.</p>
+        </header>
+        <div class="chat-window" id="chat-window">
+            <div class="message bot-message">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <footer>
+            <div class="footer-content">
+                <h3>Contact SID</h3>
+                <p>
+                    <i class="fas fa-phone-alt"></i> +91 7668124457 <br>
+                    <i class="fas fa-envelope"></i> talk2sid76@gmail.com <br>
+                    <a href="https://www.linkedin.com/in/siddharth-mishra-baa317256/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
